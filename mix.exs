@@ -14,9 +14,7 @@ defmodule NimblePool.MixProject do
       description: "A tiny resource-pool implementation",
       deps: deps(),
       docs: docs(),
-      package: package(),
-      test_coverage: [tool: ExCoveralls],
-      preferred_cli_env: ["coveralls.html": :test]
+      package: package()
     ]
   end
 
@@ -29,8 +27,7 @@ defmodule NimblePool.MixProject do
 
   defp deps do
     [
-      {:ex_doc, "~> 0.31", only: :docs},
-      {:excoveralls, "~> 0.16.1", only: :test}
+      {:ex_doc, "~> 0.31", only: :docs}
     ]
   end
 
